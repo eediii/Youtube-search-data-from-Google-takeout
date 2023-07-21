@@ -11,7 +11,7 @@ JOIN CTEforString as s
 	ON s.time = w.time
 ORDER BY w.id
 
---2.After CTE, i made temp table for not selecting also it as CTE.
+--2.I made temp table for not selecting also it as CTE.
 DROP TABLE IF EXISTS #temptable
 CREATE TABLE #temptable(
 Time varchar(100),
