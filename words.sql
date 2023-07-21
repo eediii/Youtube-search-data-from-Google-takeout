@@ -28,7 +28,7 @@ DROP TABLE IF EXISTS #main
 CREATE TABLE #main(
 ID int,
 Date varchar(100),
-Searchs text
+Searches text
 )
 
 INSERT INTO #main
@@ -50,10 +50,10 @@ WHERE Repeating > 1
 WITH MainCte AS(
 SELECT ROW_NUMBER() OVER(ORDER BY ID) AS ID,
   Date,
-  Searchs
+  Searches
 FROM #main
 )
 
-SELECT Date, Searchs
+SELECT Date, Searches
 FROM MainCte
 ORDER BY ID
