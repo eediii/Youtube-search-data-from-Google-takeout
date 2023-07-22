@@ -29,11 +29,11 @@ DROP TABLE IF EXISTS YoutubeSearchData
 CREATE TABLE YoutubeSearchData(
 ID int,
 Date varchar(100),
-Searches varchar(100)
+Searches varchar(255)
 )
 
 INSERT INTO YoutubeSearchData
-SELECT w.id, s.time, CONVERT(varchar(100), s.words)
+SELECT w.id, s.time, CONVERT(varchar(255), s.words)
 FROM words as w
 JOIN #temptable as s
 	ON s.time = w.time
@@ -63,5 +63,5 @@ ORDER BY ID
 ALTER TABLE YoutubeSearchData
 DROP COLUMN ID
 
-SELECT *
+SELECT Searches
 FROM YoutubeSearchData
