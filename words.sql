@@ -11,7 +11,7 @@ JOIN CTEforString as s
 	ON s.time = w.time
 ORDER BY w.id
 
---2.I made temp table for not selecting also it as CTE.
+--2.After CTE, i made temp table for not selecting also it as CTE.
 DROP TABLE IF EXISTS #temptable
 CREATE TABLE #temptable(
 Time varchar(100),
@@ -23,15 +23,16 @@ SELECT time, STRING_AGG(CONVERT(nvarchar(255),word), ' ') AS combined_keywords
 FROM words
 GROUP BY time
 
+--I didn't add id because it gave me error when i want to use STRING_AGG.
 --3.Main table but with duplicates, added id.
-DROP TABLE IF EXISTS #main
-CREATE TABLE #main(
+DROP TABLE IF EXISTS YoutubeSearchData
+CREATE TABLE YoutubeSearchData(
 ID int,
 Date varchar(100),
 Searches text
 )
 
-INSERT INTO #main
+INSERT INTO YoutubeSearchData
 SELECT w.id, s.time, s.words
 FROM words as w
 JOIN #temptable as s
@@ -40,20 +41,27 @@ JOIN #temptable as s
 --4.Deleting dublicates.
 WITH RepeatingCTE AS(
 SELECT *, ROW_NUMBER() OVER(PARTITION BY Date ORDER BY ID) as Repeating
-FROM #main
+FROM YoutubeSearchData
 )
 DELETE
 FROM RepeatingCTE
 WHERE Repeating > 1
 
---5.True row numbers for ordering right.
+--5.With IDs
 WITH MainCte AS(
 SELECT ROW_NUMBER() OVER(ORDER BY ID) AS ID,
   Date,
   Searches
-FROM #main
+FROM YoutubeSearchData
 )
 
-SELECT Date, Searches
+SELECT ID, Date, Searches
 FROM MainCte
 ORDER BY ID
+
+--6.Without IDs
+ALTER TABLE YoutubeSearchData
+DROP COLUMN ID
+
+SELECT *
+FROM YoutubeSearchData
