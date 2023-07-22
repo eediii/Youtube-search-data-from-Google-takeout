@@ -29,11 +29,11 @@ DROP TABLE IF EXISTS YoutubeSearchData
 CREATE TABLE YoutubeSearchData(
 ID int,
 Date varchar(100),
-Searches varchar(255)
+Searches varchar(1000)
 )
 
 INSERT INTO YoutubeSearchData
-SELECT w.id, s.time, CONVERT(varchar(255), s.words)
+SELECT w.id, s.time, CONVERT(varchar(1000), s.words)
 FROM words as w
 JOIN #temptable as s
 	ON s.time = w.time
@@ -63,5 +63,7 @@ ORDER BY ID
 ALTER TABLE YoutubeSearchData
 DROP COLUMN ID
 
-SELECT Searches
+SELECT *
 FROM YoutubeSearchData
+WHERE LEN(Searches) = (SELECT MAX(LEN(Searches)) FROM YoutubeSearchData)
+--and this is for finding what is the longest word is our Searches column to specify varchar length.
