@@ -2,7 +2,7 @@
 
 [db.png](https://github.com/eediii/Youtube-search-data-from-Google-takeout/blob/main/db.png) is for letting you guys to see what happens after starting project.py. I mean, Youtube-search-history.db was created. And if you want to use this database at Windows SQL Server then you have to convert it to .sql file. I did this by downloading DB Browser. I learned it from [here](https://stackoverflow.com/a/41802847).
 
-[example pdf.jpg](https://github.com/eediii/Youtube-search-data-from-Google-takeout/blob/main/example%20pdf.jpg) is a piece of my data after i import it as pdf.
+[example pdf.jpg](https://github.com/eediii/Youtube-search-data-from-Google-takeout/blob/main/example%20pdf.jpg) is a piece of my data after i import it as pdf. Formula that i used in HumanDate column is =((A2+(4*60*60))/86400)+DATE(1970,1,1). I added +(4*60*60) part because i wanted it to write for Azerbaijan time.
 
 [html.jpg](https://github.com/eediii/Youtube-search-data-from-Google-takeout/blob/main/html.jpg) is an screenshoot of my data that i took from Google takeout.
 
