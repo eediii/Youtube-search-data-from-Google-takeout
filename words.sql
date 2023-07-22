@@ -29,11 +29,11 @@ DROP TABLE IF EXISTS YoutubeSearchData
 CREATE TABLE YoutubeSearchData(
 ID int,
 Date varchar(100),
-Searches text
+Searches varchar(100)
 )
 
 INSERT INTO YoutubeSearchData
-SELECT w.id, s.time, s.words
+SELECT w.id, s.time, CONVERT(varchar(100), s.words)
 FROM words as w
 JOIN #temptable as s
 	ON s.time = w.time
