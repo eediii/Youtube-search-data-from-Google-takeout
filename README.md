@@ -6,4 +6,12 @@
 
 [html.jpg](https://github.com/eediii/Youtube-search-data-from-Google-takeout/blob/main/html.jpg) is an screenshoot of my data that i took from Google takeout.
 
-And i am very grateful for sentdex from Youtube. I copied all project.py from his [video](https://www.youtube.com/watch?v=Siyg1Wn5VDs)
+[excel.png](https://github.com/eediii/Youtube-search-data-from-Google-takeout/blob/main/excel.png) is a Excel sheet with pivot table and other things.
+
+[excel data.png](https://github.com/eediii/Youtube-search-data-from-Google-takeout/blob/main/excel%20data.png) is a part of my data that i exported from [YoutubeSearchData_Easy.sql](https://github.com/eediii/Youtube-search-data-from-Google-takeout/blob/main/YoutubeSearchData_Easy.sql).
+
+[YoutubeSearchData_Hard.sql](https://github.com/eediii/Youtube-search-data-from-Google-takeout/blob/main/YoutubeSearchData_Hard.sql) and [project_Hard.py](https://github.com/eediii/Youtube-search-data-from-Google-takeout/blob/main/project_Hard.py) is for table that there is ID in it and honestly i made it for, again experience.
+
+[YoutubeSearchData_Easy.sql](https://github.com/eediii/Youtube-search-data-from-Google-takeout/blob/main/YoutubeSearchData_Easy.sql) and [project_Easy.py](https://github.com/eediii/Youtube-search-data-from-Google-takeout/blob/main/project_Easy.py) is normal codes for normal people without ID:)
+
+And i am so grateful for [sentdex](https://www.youtube.com/channel/UCfzlCWGWYyIQ0aLC5w48gBQ) from Youtube. I copied all project.py from his [video](https://www.youtube.com/watch?v=Siyg1Wn5VDs)
