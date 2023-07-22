@@ -6,4 +6,4 @@ example pdf.jpg is a piece of my data after i import it as pdf.
 
 html.jpg is an screenshoot of my data that i took from Google takeout.
 
-And i am very grateful for sentdex from Youtube. I copied all project.py from his [video]([https://www.youtube.com/watch?v=Siyg1Wn5VDs])
+And i am very grateful for sentdex from Youtube. I copied all project.py from his [video](https://www.youtube.com/watch?v=Siyg1Wn5VDs)
