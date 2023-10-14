@@ -10,7 +10,7 @@
 
 [excel data.png](https://github.com/eediii/Youtube-search-data-from-Google-takeout/blob/main/excel%20data.png) is a part of my data that i exported from [YoutubeSearchData_Easy.sql](https://github.com/eediii/Youtube-search-data-from-Google-takeout/blob/main/YoutubeSearchData_Easy.sql). Formula that i used in HumanDate column is =((A2+(4*60*60))/86400)+DATE(1970,1,1). I added +(4*60*60) part because i wanted it to write for Azerbaijan time.
 
-[YoutubeSearchData_Hard.sql](https://github.com/eediii/Youtube-search-data-from-Google-takeout/blob/main/YoutubeSearchData_Hard.sql) and [project_Hard.py](https://github.com/eediii/Youtube-search-data-from-Google-takeout/blob/main/project_Hard.py) is for table that there is ID in it and honestly i made it for, again experience.
+[YoutubeSearchData_Hard.sql](https://github.com/eediii/Youtube-search-data-from-Google-takeout/blob/main/YoutubeSearchData_Hard.sql) and [project_Hard.py](https://github.com/eediii/Youtube-search-data-from-Google-takeout/blob/main/project_Hard.py) is for table that there is ID in it and honestly i made it for some experience.
 
 [YoutubeSearchData_Easy.sql](https://github.com/eediii/Youtube-search-data-from-Google-takeout/blob/main/YoutubeSearchData_Easy.sql) and [project_Easy.py](https://github.com/eediii/Youtube-search-data-from-Google-takeout/blob/main/project_Easy.py) is normal codes for normal people without ID:)
 
