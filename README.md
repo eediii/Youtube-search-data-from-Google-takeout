@@ -14,4 +14,4 @@
 
 [YoutubeSearchData_Easy.sql](https://github.com/eediii/Youtube-search-data-from-Google-takeout/blob/main/YoutubeSearchData_Easy.sql) and [project_Easy.py](https://github.com/eediii/Youtube-search-data-from-Google-takeout/blob/main/project_Easy.py) is normal codes for normal people without ID:)
 
-And i am so grateful for [sentdex](https://www.youtube.com/channel/UCfzlCWGWYyIQ0aLC5w48gBQ) from Youtube. I copied all project.py from his [video](https://www.youtube.com/watch?v=Siyg1Wn5VDs)
+And i am so grateful to [sentdex](https://www.youtube.com/channel/UCfzlCWGWYyIQ0aLC5w48gBQ) from Youtube. I copied all project.py from his [video](https://www.youtube.com/watch?v=Siyg1Wn5VDs)
